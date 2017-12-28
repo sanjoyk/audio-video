@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meaww Assignmennt audio video recording</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="audio-video/css/main.css">
+</head>
+<body>
+  <!-- choosing options audio/video, audio as default -->
+  <div class="media-optioins-container">
+    <span class="media-text">audio</span>
+    <label class="switch" id="mediaTypeContainer">
+      <input id="mediaType" type="checkbox">
+      <span class="slider round"></span>
+    </label>
+    <span class="media-text">video<span>
+  </div>
+
+  <!-- container where the recording or recorded media will show -->
+  <div id="container">
+  </div>
+
+</body>
+
+<!-- importing all files related to audio-video module -->
+<script type="text/javascript" src="audio-video/js/constants.js"></script>
+<script type="text/javascript" src="audio-video/js/constrains.js"></script>
+<script type="text/javascript" src="audio-video/js/user-media.js"></script>
+<script type="text/javascript" src="audio-video/js/record-controllers.js"></script>
+<script type="text/javascript" src="audio-video/js/recorder.js"></script>
+<script type="text/javascript" src="audio-video/js/audio-video.js"></script>
+<script type="text/javascript" src="audio-video/js/index.js"></script>
+
+
+<script>
+  document.getElementById("mediaTypeContainer").addEventListener("click", AV) ;
+</script>
+</html>
